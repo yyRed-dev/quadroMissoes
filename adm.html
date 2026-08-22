@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestBoard - Administração</title>
+    <link rel="stylesheet" href="css/adm.css">
+</head>
+<body>
+
+<main class="conteudo">
+
+    <section class="area-quadro">
+        <div class="parede-preview">
+
+            <div id="quadro" class="quadro">
+
+                <img class="imagem-quadro" src="assets/quadro.png" alt="">
+
+                <button id="papel1" class="papel" data-papel="papel1" type="button">
+                    <img src="assets/papel1.png" alt="Papel 1">
+                </button>
+
+                <button id="papel2" class="papel" data-papel="papel2" type="button">
+                    <img src="assets/papel2.png" alt="Papel 2">
+                </button>
+
+                <button id="papel3" class="papel" data-papel="papel3" type="button">
+                    <img src="assets/papel3.png" alt="Papel 3">
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <aside class="painel">
+        <h2>Papéis</h2>
+        <p>Selecione um papel para configurar.</p>
+
+        <div class="lista-papeis">
+            <button class="papel-selecao selecionado" data-papel="papel1" type="button">Papel 1</button>
+            <button class="papel-selecao" data-papel="papel2" type="button">Papel 2</button>
+            <button class="papel-selecao" data-papel="papel3" type="button">Papel 3</button>
+        </div>
+
+        <section class="propriedades">
+            <h3>Posição</h3>
+
+            <label for="posicaoX">X</label>
+            <input id="posicaoX" type="number" step="0.1">
+
+            <label for="posicaoY">Y</label>
+            <input id="posicaoY" type="number" step="0.1">
+
+            <h3>Tamanho</h3>
+
+            <label for="largura">Largura</label>
+            <input id="largura" type="number" min="1" step="1">
+
+            <label for="altura">Altura</label>
+            <input id="altura" type="number" min="1" step="1">
+
+            <h3>Rotação</h3>
+
+            <label for="rotacao">Graus</label>
+            <input id="rotacao" type="number" step="0.1">
+        </section>
+
+        <section class="acoes">
+            <button id="salvar" class="botao salvar" type="button">Salvar configurações</button>
+            <button id="resetar" class="botao" type="button">Restaurar padrão</button>
+        </section>
+
+        <p id="mensagem" class="mensagem"></p>
+    </aside>
+
+</main>
+
+<script src="js/adm.js"></script>
+</body>
+</html>

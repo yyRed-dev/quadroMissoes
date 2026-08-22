@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestBoard</title>
+    <link rel="stylesheet" href="css/usuario.css">
+</head>
+<body>
+
+    
+    <main class="parede">
+
+        <div id="quadro" class="quadro">
+
+            <img class="imagem-quadro" src="assets/quadro.png" alt="">
+
+            <button class="papel papel-1" data-papel="papel1" type="button" aria-label="Abrir papel 1">
+                <img src="assets/papel1.png" alt="Papel 1">
+            </button>
+
+            <button class="papel papel-2" data-papel="papel2" type="button" aria-label="Abrir papel 2">
+                <img src="assets/papel2.png" alt="Papel 2">
+            </button>
+
+            <button class="papel papel-3" data-papel="papel3" type="button" aria-label="Abrir papel 3">
+                <img src="assets/papel3.png" alt="Papel 3">
+            </button>
+
+        </div>
+
+    </main>
+
+    <div id="fundoZoom" class="fundo-zoom" aria-hidden="true">
+        <img id="imagemPapelZoom" class="imagem-papel-zoom" src="" alt="">
+    </div>
+
+    <audio id="musicaFundo" src="assets/musica.mp3" loop preload="auto" autoplay></audio>
+
+    <script src="usuario.js"></script>
+</body>
+</html>

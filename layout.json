@@ -1,0 +1,23 @@
+{
+    "papel1": {
+        "x": 30,
+        "y": 30,
+        "largura": 150,
+        "altura": 190,
+        "rotacao": -5
+    },
+    "papel2": {
+        "x": 60,
+        "y": 30,
+        "largura": 150,
+        "altura": 190,
+        "rotacao": 5
+    },
+    "papel3": {
+        "x": 45,
+        "y": 65,
+        "largura": 150,
+        "altura": 190,
+        "rotacao": -2
+    }
+}
